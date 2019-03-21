@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.source = {"git"=>"https://github.com/CoCoKit/CoCoRx-framework.git", "branch"=>"v1.0.0"}
   s.ios.vendored_framework = 'CoCoRx.framework'
   s.platform    = :ios, "9.0"
-  s.framework = 'AVFoundation'
+  s.framework = 'AVFoundation','Photos','CoreLocation'
   s.dependency 'ReactiveObjC'
 end
