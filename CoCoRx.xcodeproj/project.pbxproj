@@ -10,6 +10,14 @@
 		D78F63C3224287CA001F36DD /* CoCoRx.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F63C1224287CA001F36DD /* CoCoRx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D78F63CB22428CFF001F36DD /* CLLocationManager+CoCoRx.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F63C922428CFF001F36DD /* CLLocationManager+CoCoRx.h */; };
 		D78F63CC22428CFF001F36DD /* CLLocationManager+CoCoRx.m in Sources */ = {isa = PBXBuildFile; fileRef = D78F63CA22428CFF001F36DD /* CLLocationManager+CoCoRx.m */; };
+		D78F63CF22433D11001F36DD /* PHPhotoLibrary+CoCoRx.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F63CD22433D11001F36DD /* PHPhotoLibrary+CoCoRx.h */; };
+		D78F63D022433D11001F36DD /* PHPhotoLibrary+CoCoRx.m in Sources */ = {isa = PBXBuildFile; fileRef = D78F63CE22433D11001F36DD /* PHPhotoLibrary+CoCoRx.m */; };
+		D78F63D32243729B001F36DD /* AVCaptureDevice+CoCoRx.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F63D12243729B001F36DD /* AVCaptureDevice+CoCoRx.h */; };
+		D78F63D42243729B001F36DD /* AVCaptureDevice+CoCoRx.m in Sources */ = {isa = PBXBuildFile; fileRef = D78F63D22243729B001F36DD /* AVCaptureDevice+CoCoRx.m */; };
+		D78F63D922437EC5001F36DD /* UITextView+InputTextSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F63D522437EC5001F36DD /* UITextView+InputTextSignal.h */; };
+		D78F63DA22437EC5001F36DD /* UITextField+InputTextSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = D78F63D622437EC5001F36DD /* UITextField+InputTextSignal.m */; };
+		D78F63DB22437EC5001F36DD /* UITextView+InputTextSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = D78F63D722437EC5001F36DD /* UITextView+InputTextSignal.m */; };
+		D78F63DC22437EC5001F36DD /* UITextField+InputTextSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F63D822437EC5001F36DD /* UITextField+InputTextSignal.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +26,14 @@
 		D78F63C2224287CA001F36DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D78F63C922428CFF001F36DD /* CLLocationManager+CoCoRx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+CoCoRx.h"; sourceTree = "<group>"; };
 		D78F63CA22428CFF001F36DD /* CLLocationManager+CoCoRx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+CoCoRx.m"; sourceTree = "<group>"; };
+		D78F63CD22433D11001F36DD /* PHPhotoLibrary+CoCoRx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHPhotoLibrary+CoCoRx.h"; sourceTree = "<group>"; };
+		D78F63CE22433D11001F36DD /* PHPhotoLibrary+CoCoRx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PHPhotoLibrary+CoCoRx.m"; sourceTree = "<group>"; };
+		D78F63D12243729B001F36DD /* AVCaptureDevice+CoCoRx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVCaptureDevice+CoCoRx.h"; sourceTree = "<group>"; };
+		D78F63D22243729B001F36DD /* AVCaptureDevice+CoCoRx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureDevice+CoCoRx.m"; sourceTree = "<group>"; };
+		D78F63D522437EC5001F36DD /* UITextView+InputTextSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+InputTextSignal.h"; sourceTree = "<group>"; };
+		D78F63D622437EC5001F36DD /* UITextField+InputTextSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+InputTextSignal.m"; sourceTree = "<group>"; };
+		D78F63D722437EC5001F36DD /* UITextView+InputTextSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+InputTextSignal.m"; sourceTree = "<group>"; };
+		D78F63D822437EC5001F36DD /* UITextField+InputTextSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+InputTextSignal.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +68,16 @@
 			children = (
 				D78F63C1224287CA001F36DD /* CoCoRx.h */,
 				D78F63C2224287CA001F36DD /* Info.plist */,
+				D78F63D822437EC5001F36DD /* UITextField+InputTextSignal.h */,
+				D78F63D622437EC5001F36DD /* UITextField+InputTextSignal.m */,
+				D78F63D522437EC5001F36DD /* UITextView+InputTextSignal.h */,
+				D78F63D722437EC5001F36DD /* UITextView+InputTextSignal.m */,
 				D78F63C922428CFF001F36DD /* CLLocationManager+CoCoRx.h */,
 				D78F63CA22428CFF001F36DD /* CLLocationManager+CoCoRx.m */,
+				D78F63CD22433D11001F36DD /* PHPhotoLibrary+CoCoRx.h */,
+				D78F63CE22433D11001F36DD /* PHPhotoLibrary+CoCoRx.m */,
+				D78F63D12243729B001F36DD /* AVCaptureDevice+CoCoRx.h */,
+				D78F63D22243729B001F36DD /* AVCaptureDevice+CoCoRx.m */,
 			);
 			path = CoCoRx;
 			sourceTree = "<group>";
@@ -66,6 +90,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78F63CB22428CFF001F36DD /* CLLocationManager+CoCoRx.h in Headers */,
+				D78F63D922437EC5001F36DD /* UITextView+InputTextSignal.h in Headers */,
+				D78F63DC22437EC5001F36DD /* UITextField+InputTextSignal.h in Headers */,
+				D78F63CF22433D11001F36DD /* PHPhotoLibrary+CoCoRx.h in Headers */,
+				D78F63D32243729B001F36DD /* AVCaptureDevice+CoCoRx.h in Headers */,
 				D78F63C3224287CA001F36DD /* CoCoRx.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D78F63D42243729B001F36DD /* AVCaptureDevice+CoCoRx.m in Sources */,
+				D78F63DB22437EC5001F36DD /* UITextView+InputTextSignal.m in Sources */,
+				D78F63DA22437EC5001F36DD /* UITextField+InputTextSignal.m in Sources */,
+				D78F63D022433D11001F36DD /* PHPhotoLibrary+CoCoRx.m in Sources */,
 				D78F63CC22428CFF001F36DD /* CLLocationManager+CoCoRx.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

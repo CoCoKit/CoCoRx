@@ -10,6 +10,8 @@
 #import <CoCoRx/CoCoRx.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
+#import <Photos/Photos.h>
+
 
 @interface ViewController ()
 @property (nonatomic, strong) CLLocationManager *manager;
@@ -19,6 +21,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self 请求定位];
+    [self 请求相册权限];
+    
+}
+
+- (void)请求相册权限
+{
+    [[PHPhotoLibrary requestAuthorizationSignal] subscribeNext:^(id  _Nullable x) {
+        
+    }];
+}
+
+- (void)请求定位
+{
     self.manager = [[CLLocationManager alloc] init];
     self.manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
     self.manager.authorizationModel = CLAuthorizationModelAlways;

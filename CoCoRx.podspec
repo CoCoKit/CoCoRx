@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source = {"git"=>"https://github.com/CoCoKit/CoCoRx.git", "branch"=>"v1.0.0"}
   s.source_files = "CoCoRx/**/*.{h,m,mm,cpp}"
   s.platform    = :ios, "9.0"
-  s.framework = 'AVFoundation','CoreLocation'
+  s.framework = 'AVFoundation'
   s.resource_bundle = { 'CoCoRx' => ['Resources/*'] }
   s.dependency 'ReactiveObjC'
 end

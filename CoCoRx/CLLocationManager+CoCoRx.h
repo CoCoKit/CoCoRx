@@ -9,11 +9,13 @@
 #import <CoreLocation/CoreLocation.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
+#ifdef __CORELOCATION__
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef enum : NSUInteger {
-    CLAuthorizationModelWhenInUse, //用户使用时
-    CLAuthorizationModelAlways,    //总是使用定位
+    CLAuthorizationModelWhenInUse, // 用户使用时
+    CLAuthorizationModelAlways,    // 总是使用定位
 } CLAuthorizationModel;
 
 @interface CLLocationManager (CoCoRx)
@@ -43,3 +45,5 @@ typedef enum : NSUInteger {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

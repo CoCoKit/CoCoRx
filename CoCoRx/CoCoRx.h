@@ -10,6 +10,7 @@
 #import <ReactiveObjC/ReactiveObjC.h>
 
 #import <CoCoRx/CLLocationManager+CoCoRx.h>
+#import <CoCoRx/PHPhotoLibrary+CoCoRx.h>
 
 //! Project version number for CoCoRx.
 FOUNDATION_EXPORT double CoCoRxVersionNumber;
