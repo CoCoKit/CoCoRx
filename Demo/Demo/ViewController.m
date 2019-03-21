@@ -7,26 +7,32 @@
 //
 
 #import "ViewController.h"
-#import <CoCoTextEditKit/CoCoTextEditKit.h>
-#import <CoCoCategorys/UIImage+CoCoColor.h>
-#import <CoCoKit/CoCoKit.h>
+#import <CoCoRx/CoCoRx.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
 @interface ViewController ()
-
+@property (nonatomic, strong) CLLocationManager *manager;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    coco_weakSelf
-    runAsyncOnMainQueueAfter(3, ^{
-        coco_strongSelf
-        UIImage *image = [UIImage imageNamed:@"test.JPG"];
-        NSAttributedString *attribute = [[NSAttributedString alloc] initWithString:@"aaa"];
-        CoCoTextEditorController *vc = [[CoCoTextEditorController alloc] initWithAttributeString:attribute];
-        [self presentViewController:vc animated:YES completion:nil];
-    });
+    self.manager = [[CLLocationManager alloc] init];
+    self.manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    self.manager.authorizationModel = CLAuthorizationModelAlways;
+    [[self.manager requestCoreLocation] subscribeNext:^(CLLocation *location) {
+        NSLog(@"1----%f %f",location.coordinate.latitude,location.coordinate.longitude);
+    } error:^(NSError *error) {
+        NSLog(@"1----%@",[NSString stringWithFormat:@"%@", error.localizedDescription]);
+    }];
+    
+    [[self.manager requestCoreLocation] subscribeNext:^(CLLocation *location) {
+        NSLog(@"2----%f %f",location.coordinate.latitude,location.coordinate.longitude);
+    } error:^(NSError *error) {
+        NSLog(@"2----%@",[NSString stringWithFormat:@"%@", error.localizedDescription]);
+    }];
 }
 
 

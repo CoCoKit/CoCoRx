@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+
+#import <CoCoRx/CLLocationManager+CoCoRx.h>
 
 //! Project version number for CoCoRx.
 FOUNDATION_EXPORT double CoCoRxVersionNumber;

@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D78F63C3224287CA001F36DD /* CoCoRx.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F63C1224287CA001F36DD /* CoCoRx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D78F63CB22428CFF001F36DD /* CLLocationManager+CoCoRx.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F63C922428CFF001F36DD /* CLLocationManager+CoCoRx.h */; };
+		D78F63CC22428CFF001F36DD /* CLLocationManager+CoCoRx.m in Sources */ = {isa = PBXBuildFile; fileRef = D78F63CA22428CFF001F36DD /* CLLocationManager+CoCoRx.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D78F63BE224287CA001F36DD /* CoCoRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoCoRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78F63C1224287CA001F36DD /* CoCoRx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoCoRx.h; sourceTree = "<group>"; };
 		D78F63C2224287CA001F36DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D78F63C922428CFF001F36DD /* CLLocationManager+CoCoRx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+CoCoRx.h"; sourceTree = "<group>"; };
+		D78F63CA22428CFF001F36DD /* CLLocationManager+CoCoRx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+CoCoRx.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				D78F63C1224287CA001F36DD /* CoCoRx.h */,
 				D78F63C2224287CA001F36DD /* Info.plist */,
+				D78F63C922428CFF001F36DD /* CLLocationManager+CoCoRx.h */,
+				D78F63CA22428CFF001F36DD /* CLLocationManager+CoCoRx.m */,
 			);
 			path = CoCoRx;
 			sourceTree = "<group>";
@@ -59,6 +65,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D78F63CB22428CFF001F36DD /* CLLocationManager+CoCoRx.h in Headers */,
 				D78F63C3224287CA001F36DD /* CoCoRx.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D78F63CC22428CFF001F36DD /* CLLocationManager+CoCoRx.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
