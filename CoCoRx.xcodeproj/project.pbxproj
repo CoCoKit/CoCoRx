@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214BE03B52CE9DB92A091E7B /* libPods-CoCoRx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E27D9D3D1B26D8E362E72E /* libPods-CoCoRx.a */; };
 		D78F63C3224287CA001F36DD /* CoCoRx.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F63C1224287CA001F36DD /* CoCoRx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D78F63CB22428CFF001F36DD /* CLLocationManager+CoCoRx.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F63C922428CFF001F36DD /* CLLocationManager+CoCoRx.h */; };
 		D78F63CC22428CFF001F36DD /* CLLocationManager+CoCoRx.m in Sources */ = {isa = PBXBuildFile; fileRef = D78F63CA22428CFF001F36DD /* CLLocationManager+CoCoRx.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32BF7F168471BD9B03F5BF4C /* Pods-CoCoRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoRx.debug.xcconfig"; path = "Target Support Files/Pods-CoCoRx/Pods-CoCoRx.debug.xcconfig"; sourceTree = "<group>"; };
+		921E1AD854820C9A355C6BC2 /* Pods-CoCoRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoRx.release.xcconfig"; path = "Target Support Files/Pods-CoCoRx/Pods-CoCoRx.release.xcconfig"; sourceTree = "<group>"; };
 		D78F63BE224287CA001F36DD /* CoCoRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoCoRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78F63C1224287CA001F36DD /* CoCoRx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoCoRx.h; sourceTree = "<group>"; };
 		D78F63C2224287CA001F36DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		D78F63D622437EC5001F36DD /* UITextField+InputTextSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+InputTextSignal.m"; sourceTree = "<group>"; };
 		D78F63D722437EC5001F36DD /* UITextView+InputTextSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+InputTextSignal.m"; sourceTree = "<group>"; };
 		D78F63D822437EC5001F36DD /* UITextField+InputTextSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+InputTextSignal.h"; sourceTree = "<group>"; };
+		E6E27D9D3D1B26D8E362E72E /* libPods-CoCoRx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoCoRx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214BE03B52CE9DB92A091E7B /* libPods-CoCoRx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89B7B7501EC3DF1393EF7419 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32BF7F168471BD9B03F5BF4C /* Pods-CoCoRx.debug.xcconfig */,
+				921E1AD854820C9A355C6BC2 /* Pods-CoCoRx.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		8F7A7DDE88AA52AB074345B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6E27D9D3D1B26D8E362E72E /* libPods-CoCoRx.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D78F63B4224287CA001F36DD = {
 			isa = PBXGroup;
 			children = (
 				D78F63C0224287CA001F36DD /* CoCoRx */,
 				D78F63BF224287CA001F36DD /* Products */,
+				89B7B7501EC3DF1393EF7419 /* Pods */,
+				8F7A7DDE88AA52AB074345B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +130,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D78F63C6224287CA001F36DD /* Build configuration list for PBXNativeTarget "CoCoRx" */;
 			buildPhases = (
+				9D48215696C65C602BFB619C /* [CP] Check Pods Manifest.lock */,
 				D78F63B9224287CA001F36DD /* Headers */,
 				D78F63BA224287CA001F36DD /* Sources */,
 				D78F63BB224287CA001F36DD /* Frameworks */,
@@ -159,6 +185,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D48215696C65C602BFB619C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoCoRx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D78F63BA224287CA001F36DD /* Sources */ = {
@@ -296,6 +347,7 @@
 		};
 		D78F63C7224287CA001F36DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32BF7F168471BD9B03F5BF4C /* Pods-CoCoRx.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +372,7 @@
 		};
 		D78F63C8224287CA001F36DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921E1AD854820C9A355C6BC2 /* Pods-CoCoRx.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
