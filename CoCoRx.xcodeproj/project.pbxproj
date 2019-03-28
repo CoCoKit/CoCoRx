@@ -349,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32BF7F168471BD9B03F5BF4C /* Pods-CoCoRx.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 921E1AD854820C9A355C6BC2 /* Pods-CoCoRx.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
