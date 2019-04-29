@@ -23,7 +23,9 @@
 
 /* Begin PBXFileReference section */
 		32BF7F168471BD9B03F5BF4C /* Pods-CoCoRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoRx.debug.xcconfig"; path = "Target Support Files/Pods-CoCoRx/Pods-CoCoRx.debug.xcconfig"; sourceTree = "<group>"; };
+		713E3ABC78B8FC2FD69E9F70 /* Pods-CoCoRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoRx.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-CoCoRx/Pods-CoCoRx.debug.xcconfig"; sourceTree = "<group>"; };
 		921E1AD854820C9A355C6BC2 /* Pods-CoCoRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoRx.release.xcconfig"; path = "Target Support Files/Pods-CoCoRx/Pods-CoCoRx.release.xcconfig"; sourceTree = "<group>"; };
+		B294E4CF1644139FFEC5721B /* Pods-CoCoRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoRx.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-CoCoRx/Pods-CoCoRx.release.xcconfig"; sourceTree = "<group>"; };
 		D78F63BE224287CA001F36DD /* CoCoRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoCoRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78F63C1224287CA001F36DD /* CoCoRx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoCoRx.h; sourceTree = "<group>"; };
 		D78F63C2224287CA001F36DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +59,8 @@
 			children = (
 				32BF7F168471BD9B03F5BF4C /* Pods-CoCoRx.debug.xcconfig */,
 				921E1AD854820C9A355C6BC2 /* Pods-CoCoRx.release.xcconfig */,
+				713E3ABC78B8FC2FD69E9F70 /* Pods-CoCoRx.debug.xcconfig */,
+				B294E4CF1644139FFEC5721B /* Pods-CoCoRx.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -348,7 +352,7 @@
 		};
 		D78F63C7224287CA001F36DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32BF7F168471BD9B03F5BF4C /* Pods-CoCoRx.debug.xcconfig */;
+			baseConfigurationReference = 713E3ABC78B8FC2FD69E9F70 /* Pods-CoCoRx.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -374,7 +378,7 @@
 		};
 		D78F63C8224287CA001F36DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 921E1AD854820C9A355C6BC2 /* Pods-CoCoRx.release.xcconfig */;
+			baseConfigurationReference = B294E4CF1644139FFEC5721B /* Pods-CoCoRx.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
